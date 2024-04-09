@@ -34,7 +34,7 @@ You can also read your results in from a previously generated .tsv file (e.g. `b
 `dotplotter -i blastn.tsv`
 
 #### blastn tips
-Setting the parameters of you blast search can be very important. For larger sequences the default values should be fine. However, if you are looking for smaller repeats, you may need to adjust the word size of you blastn search ´-word_size´.
+Setting the parameters of you blast search can be very important. For larger sequences the default values should be fine. However, if you are looking for smaller repeats, you may need to adjust the word size of you blastn search `-word_size`.
 
 ### Highlighting
 You can also highlight regions of interest.
@@ -66,6 +66,6 @@ Comparison of _Streptomyces coelicolor_ and _Streptomyces albus_ with gene clust
 Coming soon...
 
 ## Patch Notes
-### Verion 1
+### Version 1
 - 1.0.0
   - initial release
