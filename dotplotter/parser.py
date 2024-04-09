@@ -77,7 +77,7 @@ def get_parser():
         '-hs',
         '--highlight-start',
         type=int,
-        default=-1,
+        default=-2,
         help = (
             'start location of region to highlight'
         )
@@ -111,7 +111,14 @@ def get_parser():
     )
     return parser
 
-def get_args(): 
+def get_args():
+    '''
+    gets the arguments from the parser
+        arguments:
+            None
+        returns:
+            args: arguments object
+    '''
     parser = get_parser()
     args = parser.parse_args()
     return args
