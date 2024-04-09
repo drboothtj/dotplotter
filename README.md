@@ -7,31 +7,31 @@ build dotplots from blastn results
 ## Installation
 The easiest way to install dotplotter is though the python package index.
 
-´pip install dotplotter´
+`pip install dotplotter`
 
 This will fetch and install the latest version from: LINK
 
 You can also install by cloning this repository.
 
-´dotplotter´ only requires ´matplotlib´ and this should be installed automatically.
+`dotplotter` only requires `matplotlib` and this should be installed automatically.
 
 ## Usage
 ### Basic Usage
-You can use ´dotplotter´ in two ways: using stdin, or reading a .tsv file.
+You can use `dotplotter` in two ways: using stdin, or reading a .tsv file.
 
-Example data can be found in this repository ´./example_data´.
+Example data can be found in this repository `./example_data`.
 
-**Important:** Regardless of method, make sure your results are in blast outfmt 6. This is specified in the search with ´-outfmt 6´
+**Important:** Regardless of method, make sure your results are in blast outfmt 6. This is specified in the search with `-outfmt 6`
 
 #### stdin method
-You can pipe your ´blastn´ results straight into ´dotplotter´:
+You can pipe your `blastn` results straight into `dotplotter`:
 
-´blastn -query streptomyces_coelicolor.fna -subject streptomyces_albus.fna -outfmt 6 | dotplotter´
+`blastn -query streptomyces_coelicolor.fna -subject streptomyces_albus.fna -outfmt 6 | dotplotter`
 
 #### .tsv method
-You can also read your results in from a previously generated .tsv file (e.g. ´blastn -query streptomyces_coelicolor.fna -subject streptomyces_albus.fna -outfmt 6 > blastn.tsv´)
+You can also read your results in from a previously generated .tsv file (e.g. `blastn -query streptomyces_coelicolor.fna -subject streptomyces_albus.fna -outfmt 6 > blastn.tsv`)
 
-´dotplotter -i blastn.tsv´
+`dotplotter -i blastn.tsv`
 
 ### Highlighting
 You can also highlight regions of interest.
@@ -39,20 +39,20 @@ You can also highlight regions of interest.
 **Important:** Highlighted regions are based on the query sequence ONLY.
 
 #### Single Region Highlighting
-The easiest way to highlight a single region is to use the in-built parameters: ´-hs´/´highlight-start´ and ´-he´/´--highlight-end´. For example:
+The easiest way to highlight a single region is to use the in-built parameters: `-hs`/`highlight-start` and `-he`/`--highlight-end`. For example:
 
 ´´
 
 #### Multiple Region Highlighting
 To highlight multiple regions, you can provide a .csv file containing the required information. Each line should contain the start position, end position and the hex value (or colour name).
-See ´.example_data/highlight.csv´ for an example. You can specify this file with ´-hf´/´--highligh-file´.
+See `.example_data/highlight.csv` for an example. You can specify this file with `-hf`/`--highligh-file`.
 
-´dotplotter -i blastn.tsv -hf highlight.csv´
+`dotplotter -i blastn.tsv -hf highlight.csv`
 
 ### Further Usage
 For more usage information, use the help command:
 
-´dotplotter -h´
+`dotplotter -h`
 
 ## Citation
 Coming soon...
