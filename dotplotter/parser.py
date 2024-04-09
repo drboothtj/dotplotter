@@ -1,7 +1,8 @@
 '''
 Parser for dotplotter.
     Functions:
-        xxxxx
+        get_parser()
+        get_args()
 '''
 import argparse
 import sys
