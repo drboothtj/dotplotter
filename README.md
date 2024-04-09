@@ -33,6 +33,9 @@ You can also read your results in from a previously generated .tsv file (e.g. `b
 
 `dotplotter -i blastn.tsv`
 
+#### blastn tips
+Setting the parameters of you blast search can be very important. For larger sequences the default values should be fine. However, if you are looking for smaller repeats, you may need to adjust the word size of you blastn search ´-word_size´.
+
 ### Highlighting
 You can also highlight regions of interest.
 
@@ -53,6 +56,11 @@ See `.example_data/highlight.csv` for an example. You can specify this file with
 For more usage information, use the help command:
 
 `dotplotter -h`
+
+## Example Output
+Comparison of _Streptomyces coelicolor_ and _Streptomyces albus_ with gene clusters for ectoine (green), desferrioxamine (red) and spore pigment (purple) highlighted.
+
+![example output](https://github.com/drboothtj/dotplotter/blob/main/example_data/output.png)
 
 ## Citation
 Coming soon...
