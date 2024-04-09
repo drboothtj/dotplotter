@@ -41,7 +41,7 @@ You can also highlight regions of interest.
 #### Single Region Highlighting
 The easiest way to highlight a single region is to use the in-built parameters: `-hs`/`highlight-start` and `-he`/`--highlight-end`. For example:
 
-´´
+`dotplotter -i blastn.tsv -hs 3024902 -he 3054689`
 
 #### Multiple Region Highlighting
 To highlight multiple regions, you can provide a .csv file containing the required information. Each line should contain the start position, end position and the hex value (or colour name).
