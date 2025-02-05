@@ -96,6 +96,7 @@ def main():
         new_query_values, new_subject_values = chunks.get_chunks(
             query_values, subject_values, lower_boundary, upper_boundary
             )
+        #print('plotting', new_query_values, new_subject_values, _bin[2].strip())
         if len(new_query_values) == 0:
             print('WRARNING: Following highlight had no hits:', _bin)
         #print('plotting', new_query_values, new_subject_values, _bin[2].strip())
