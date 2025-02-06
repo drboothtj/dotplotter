@@ -60,12 +60,15 @@ For more usage information, use the help command:
 ## Example Output
 Comparison of _Streptomyces coelicolor_ and _Streptomyces albus_ with gene clusters for ectoine (green), desferrioxamine (red) and spore pigment (purple) highlighted.
 
-![example output](https://github.com/drboothtj/dotplotter/blob/main/example_data/output.png)
+![example output](https://raw.githubusercontent.com/drboothtj/dotplotter/main/example_data/output.png)
 
 ## Citation
-Coming soon...
+Mohite, O.S., Jørgensen, T.S., Booth, T.J. et al. [Pangenome mining of the Streptomyces genus redefines species’ biosynthetic potential.](https://doi.org/10.1186/s13059-024-03471-9) *Genome Biol* **26**, 9 (2025)
 
 ## Patch Notes
 ### Version 1
 - 1.0.0
   - initial release
+- 1.0.1
+  - removed unnecessary print statements
+  - added citation abd fixed example images
