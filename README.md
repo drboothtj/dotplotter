@@ -71,4 +71,4 @@ Mohite, O.S., Jørgensen, T.S., Booth, T.J. et al. [Pangenome mining of the Stre
   - initial release
 - 1.0.1
   - removed unnecessary print statements
-  - added citation abd fixed example images
+  - fixed README.md
