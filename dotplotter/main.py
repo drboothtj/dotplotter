@@ -98,7 +98,7 @@ def main():
             )
         #print('plotting', new_query_values, new_subject_values, _bin[2].strip())
         if len(new_query_values) == 0:
-            print('WRARNING: Following highlight had no hits:', _bin)
+            print('WARNING: Following highlight had no hits:', _bin)
         #print('plotting', new_query_values, new_subject_values, _bin[2].strip())
         plot_dotplot(new_query_values, new_subject_values, _bin[2].strip())
 
