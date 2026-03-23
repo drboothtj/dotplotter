@@ -72,10 +72,13 @@ def main():
     subject_values = []
     line_dicts = []
 
-    if bin_file is None:
+
+    if bin_file is not None:
+        bins = [line.strip().split(',') for line in bin_file.readlines()]
+    elif highlight_start is not None and highlight_end is not None:
         bins = [[highlight_start, highlight_end, highlight_color]]
     else:
-        bins = [line.strip().split(',') for line in bin_file.readlines()]
+        bins = []   # in case no file or no arg provided
 
     ###temp
     for line in input_lines:

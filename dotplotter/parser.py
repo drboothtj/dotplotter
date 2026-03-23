@@ -78,7 +78,7 @@ def get_parser():
         '-hs',
         '--highlight-start',
         type=int,
-        default=-2,
+        default=None,
         help = (
             'start location of region to highlight'
         )
@@ -87,7 +87,7 @@ def get_parser():
         '-he',
         '--highlight-end',
         type=int,
-        default=-1,
+        default=None,
         help = (
             'end location of region to highlight'
         )
