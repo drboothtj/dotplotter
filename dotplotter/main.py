@@ -112,4 +112,4 @@ def main():
     # Display the plot
     plt.grid(True)
     plt.savefig(outfile)
-    print('Done!')
+    print(f'Done! Ouptut written to {outfile}')
