@@ -67,8 +67,14 @@ Mohite, O.S., Jørgensen, T.S., Booth, T.J. et al. [Pangenome mining of the Stre
 
 ## Patch Notes
 ### Version 1
-- 1.0.0
-  - initial release
+- 1.0.2
+  - fixed erroneously triggered warning message when no highlighting provided
+  - added version number to log
+  - added file location of output file to log
+  - added missing example command in example data
+  - fixed typos
 - 1.0.1
   - removed unnecessary print statements
   - fixed README.md
+- 1.0.0
+  - initial release

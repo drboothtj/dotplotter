@@ -52,7 +52,7 @@ def main():
         returns: None
     '''
     #get arguments
-    print('Running dotplotter...')
+    print('Running dotplotter v1.0.2...')
     args = parser.get_args()
     input_lines = [line.strip() for line in args.input.readlines()]
     eval_cutoff = args.e_value
