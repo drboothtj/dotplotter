@@ -80,7 +80,6 @@ def main():
     else:
         bins = []   # in case no file or no arg provided
 
-    ###temp
     for line in input_lines:
         line_dict = get_line_info(line)
         if line_dict['e_value'] > eval_cutoff or line_dict['min_size'] < size_cutoff:
@@ -105,11 +104,12 @@ def main():
         #print('plotting', new_query_values, new_subject_values, _bin[2].strip())
         plot_dotplot(new_query_values, new_subject_values, _bin[2].strip())
 
-    # Add labels and title
-    plt.xlabel('query') # get
-    plt.ylabel('subject') # get
+    # add labels and title
+    plt.xlabel('query')
+    plt.ylabel('subject') 
 
-    # Display the plot
+    # display the plot
     plt.grid(True)
     plt.savefig(outfile)
-    print(f'Done! Ouptut written to {outfile}')
+    print(f'Done! Output written to "{outfile}".')
+
